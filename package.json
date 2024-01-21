@@ -7,12 +7,16 @@
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "format": "npx prettier --write ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jest": "^29.7.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.2.4"
   }
 }
