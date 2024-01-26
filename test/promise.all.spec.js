@@ -1,29 +1,4 @@
 
-const CustomPromise = {
-    all: (promises) => {
-        return new Promise((resolve, reject) => {
-            const results = [];
-    
-            if (promises.length === 0) {
-                resolve(results);
-                return;
-            }
-    
-            let pending = promises.length;
-    
-            promises.forEach((promise, idx) => {
-                Promise.resolve(promise).then((value) => {
-                    results[idx] = value;
-                    pending--;
-                    if (pending === 0) {
-                        resolve(results);
-                    }
-                }, reject);
-            });
-        });
-    }
-}
-
 
 describe('Promise all test suite', () => {
     const task = time => {
