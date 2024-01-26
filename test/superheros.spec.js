@@ -4,7 +4,7 @@
  */
 
 describe.skip('Superheros score testing suite', () => {
-    it('Should show the correct score of the heros from new york', () => {
+    it('should show the correct score of the heros from new york', () => {
         expect(getSuperherosScoreFrom('New York')).toEqual(378);
     });
 });

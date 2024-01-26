@@ -1,5 +1,5 @@
 /**
- * Implent the following
+ * Implement the following
  * console.info(sum(2)(5)) //7
  */
 
